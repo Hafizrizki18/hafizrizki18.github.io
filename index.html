@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Hafizh Rizki Oktavian — Business Analyst & ERP Specialist. Fresh Graduate of Information Systems from Telkom University with a focus on Enterprise Resource Planning and Business Process Optimization.">
+    <meta name="keywords" content="Hafizh Rizki Oktavian, Business Analyst, ERP Specialist, Portfolio, System Analyst, Odoo, SAP">
+    <meta name="author" content="Hafizh Rizki Oktavian">
+    <title>Hafizh Rizki Oktavian — Business Analyst & ERP Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-text">HRO</div>
+        </div>
+    </div>
+
+    <!-- Floating Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">HRO</span>
+                <span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Let's Connect</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Open to Opportunities</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Hafizh Rizki<br>Oktavian</span>
+                    <span class="hero-role" id="typedRole"></span>
+                </h1>
+                <p class="hero-description animate-on-scroll">
+                    An Information Systems graduate from Telkom University with a strong passion for 
+                    <span class="text-highlight">Enterprise Resource Planning (ERP)</span>, 
+                    <span class="text-highlight">Business Process Optimization</span>, and 
+                    <span class="text-highlight">IT-driven solutions</span>. 
+                    I believe that the right technology, when applied strategically, can transform the way businesses operate and grow.
+                </p>
+                <div class="hero-actions animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">Years Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll">
+                <div class="hero-avatar-wrapper">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f0d68a;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="80" r="35" fill="url(#avatarGrad)"/>
+                            <path d="M100 120 C60 120 30 150 30 180 L30 200 L170 200 L170 180 C170 150 140 120 100 120Z" fill="url(#avatarGrad)"/>
+                        </svg>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-chart-line"></i>
+                        <span>ERP Expert</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-cogs"></i>
+                        <span>System Analyst</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-handshake"></i>
+                        <span>Business Analyst</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-user-tie"></i> About Me</span>
+                <h2 class="section-title">Bridging Business & Technology</h2>
+                <p class="section-subtitle">Turning complex business challenges into streamlined, technology-powered solutions</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <p>
+                        I'm a fresh graduate holding a <strong>Bachelor's degree in Information Systems</strong> from 
+                        <strong>Telkom University</strong> with a GPA of <strong>3.64/4.00</strong>, specializing in 
+                        Enterprise Resource Planning (ERP). I'm also a <strong>BNSP Certified System Analyst</strong>, 
+                        which has equipped me with a solid foundation in analyzing system requirements and designing 
+                        effective solutions.
+                    </p>
+                    <p>
+                        What truly drives me is the intersection of business and technology. I find it fascinating how the 
+                        right systems and processes can significantly improve how organizations operate. Whether it's 
+                        mapping out business processes, gathering requirements from stakeholders, or implementing ERP 
+                        systems — I'm always eager to contribute and learn.
+                    </p>
+                    <p>
+                        I bring strong analytical thinking, a keen attention to detail, and solid communication skills to 
+                        every project. I'm a firm believer in collaborative work and continuous improvement, and I'm 
+                        always looking for ways to grow both professionally and personally.
+                    </p>
+                </div>
+                <div class="about-highlights animate-on-scroll">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-building"></i></div>
+                        <h3>ERP & Enterprise Solutions</h3>
+                        <p>Specialized in Odoo and SAP implementations, with hands-on experience in system configuration, deployment, and integration.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Business Process Analysis</h3>
+                        <p>Skilled in modeling As-Is and To-Be processes using BPMN, identifying inefficiencies, and recommending actionable improvements.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3>Quality Assurance</h3>
+                        <p>Experienced in manual and automated testing (Selenium, JMeter), test case design, UAT execution, and defect tracking.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Requirements Engineering</h3>
+                        <p>Proficient in stakeholder interviews, requirements gathering, and creating comprehensive BRDs and system specifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Where I've applied my skills to real-world business challenges</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Business Analyst</h3>
+                                <p class="timeline-company">PT. Blue Star Karsa Unggul</p>
+                            </div>
+                            <span class="timeline-date">2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Conducted business requirements analysis through observation, interviews, and discussions with stakeholders to understand business objectives and operational needs.</li>
+                            <li>Prepared Business Requirement Documents (BRD), use cases, and system requirement documentation to support the development process.</li>
+                            <li>Identified business pain points and proposed technology-driven solutions to enhance process effectiveness and operational efficiency.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Business Analysis</span>
+                            <span class="tag">BRD</span>
+                            <span class="tag">Stakeholder Management</span>
+                            <span class="tag">Requirements Gathering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A showcase of projects where I've contributed to business growth through technology</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="erp">ERP & Systems</button>
+                <button class="filter-btn" data-filter="analysis">Business Analysis</button>
+                <button class="filter-btn" data-filter="testing">Quality Assurance</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- ERP System Development -->
+                <div class="project-card animate-on-scroll" data-category="erp">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-boxes-stacked"></i></div>
+                        <span class="card-badge">ERP</span>
+                    </div>
+                    <h3 class="card-title">ERP System Development & Business Process Optimization</h3>
+                    <p class="card-org">UMKM Mitra Kusuma Indrayana — 2025</p>
+                    <p class="card-description">Analyzed business processes and operational needs for an SME to identify issues in stock management, purchasing, and sales. Designed and implemented an Odoo ERP system on VPS, integrating Inventory, Sales, and Invoicing modules.</p>
+                    <ul class="card-highlights">
+                        <li>Deployed Odoo ERP on Virtual Private Server (VPS)</li>
+                        <li>Integrated Inventory, Sales & Invoicing modules</li>
+                        <li>Conducted Black Box Testing, UAT & SUS evaluation</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Odoo</span><span>ERP</span><span>VPS</span><span>UAT</span><span>SUS</span>
+                    </div>
+                </div>
+
+                <!-- Enterprise Application Integration -->
+                <div class="project-card animate-on-scroll" data-category="erp">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                        <span class="card-badge">Enterprise</span>
+                    </div>
+                    <h3 class="card-title">Enterprise Application Integration — On-Demand Manufacturing System</h3>
+                    <p class="card-org">Academic Project — 2025</p>
+                    <p class="card-description">Developed an on-demand manufacturing system using microservices architecture to manage production processes based on marketplace orders. Implemented inter-service communication using GraphQL.</p>
+                    <ul class="card-highlights">
+                        <li>Microservices architecture with GraphQL</li>
+                        <li>Integrated Production Management, Planning, Machine Queue, Material Inventory & Feedback services</li>
+                        <li>Separate service and database management</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Microservices</span><span>GraphQL</span><span>Manufacturing</span><span>Integration</span>
+                    </div>
+                </div>
+
+                <!-- IT Governance -->
+                <div class="project-card animate-on-scroll" data-category="analysis">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+                        <span class="card-badge">Governance</span>
+                    </div>
+                    <h3 class="card-title">IT Governance using COBIT 2019 Design Factors</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2025</p>
+                    <p class="card-description">Analyzed COBIT 2019 design factors to understand IT governance conditions and requirements. Assessed current IT maturity, defined targets, and identified gaps through interviews, documentation, and information security evaluation.</p>
+                    <ul class="card-highlights">
+                        <li>COBIT 2019 framework assessment</li>
+                        <li>IT maturity gap analysis</li>
+                        <li>Governance improvement recommendations</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>COBIT 2019</span><span>IT Governance</span><span>Gap Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Business Process Engineering -->
+                <div class="project-card animate-on-scroll" data-category="analysis">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-diagram-project"></i></div>
+                        <span class="card-badge">BPE</span>
+                    </div>
+                    <h3 class="card-title">Business Process Engineering</h3>
+                    <p class="card-org">CV. Galaxy Medical Center — 2023</p>
+                    <p class="card-description">Created As-Is and To-Be business process models using BPMN to document current processes and proposed improvements. Analyzed workflows from customer requests through production to administrative coordination.</p>
+                    <ul class="card-highlights">
+                        <li>As-Is & To-Be process modeling (BPMN)</li>
+                        <li>End-to-end workflow analysis</li>
+                        <li>Process improvement documentation</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>BPMN</span><span>Business Process</span><span>Analysis</span>
+                    </div>
+                </div>
+
+                <!-- System Analyst -->
+                <div class="project-card animate-on-scroll" data-category="analysis">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+                        <span class="card-badge">System Analysis</span>
+                    </div>
+                    <h3 class="card-title">System Analyst — Production System for Orthotics & Prosthetics</h3>
+                    <p class="card-org">CV. Galaxy Medical Center — 2024</p>
+                    <p class="card-description">Analyzed requirements and business processes for orthotics and prosthetics equipment production. Designed system modeling diagrams to illustrate process flows, user interactions, and system requirements.</p>
+                    <ul class="card-highlights">
+                        <li>Requirements analysis & system specification</li>
+                        <li>System modeling diagrams</li>
+                        <li>Cross-department coordination improvements</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>System Analysis</span><span>UML</span><span>Requirements</span>
+                    </div>
+                </div>
+
+                <!-- Mini ATM Rintis -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">Mini ATM Rintis (StarBizz)</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Performed end-to-end testing on Android-based EDC devices (P1000) for agent banking transactions. Identified, documented, and tracked bugs throughout the testing cycle.</p>
+                    <ul class="card-highlights">
+                        <li>End-to-end EDC device testing</li>
+                        <li>Agent banking transaction validation</li>
+                        <li>Bug documentation & team coordination</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>E2E Testing</span><span>Android</span><span>EDC</span><span>Fintech</span>
+                    </div>
+                </div>
+
+                <!-- E-Form -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">E-Form Mobile & Web</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Tested mobile and web applications for sales agent registration and data management. Created and executed test cases, performed automated testing with Selenium IDE and performance testing with JMeter.</p>
+                    <ul class="card-highlights">
+                        <li>Automated testing with Selenium IDE</li>
+                        <li>Performance testing with JMeter</li>
+                        <li>Issue tracking with Trello</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Selenium</span><span>JMeter</span><span>Trello</span><span>Automation</span>
+                    </div>
+                </div>
+
+                <!-- ArranetPay -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-wallet"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">ArranetPay</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Tested transaction flows to ensure system functionality met requirements. Identified and documented bugs, and coordinated with the development team for fix validation.</p>
+                    <ul class="card-highlights">
+                        <li>Transaction flow testing</li>
+                        <li>Bug identification & documentation</li>
+                        <li>Developer coordination for validation</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Functional Testing</span><span>Fintech</span><span>QA</span>
+                    </div>
+                </div>
+
+                <!-- PayAja -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">PayAja</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Tested digital payment features on Android and EDC platforms. Performed functional and regression testing to ensure system reliability and documented all findings.</p>
+                    <ul class="card-highlights">
+                        <li>Android & EDC platform testing</li>
+                        <li>Functional & regression testing</li>
+                        <li>Comprehensive test documentation</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Regression Testing</span><span>Android</span><span>Digital Payment</span>
+                    </div>
+                </div>
+
+                <!-- MSK -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-warehouse"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">Mutiara Super Kitchen (MSK)</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Tested web application for inventory and stock management systems. Performed automated testing using Selenium, identifying issues and collaborating with backend and frontend developers.</p>
+                    <ul class="card-highlights">
+                        <li>Inventory & stock management testing</li>
+                        <li>Selenium automated testing</li>
+                        <li>Cross-team collaboration</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Selenium</span><span>Inventory</span><span>Web Testing</span>
+                    </div>
+                </div>
+
+                <!-- Agent Management System -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-users-gear"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">Agent Management System</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Performed functionality testing on transaction monitoring and MID/TID assignment features. Created and executed test cases with systematic issue tracking via Trello.</p>
+                    <ul class="card-highlights">
+                        <li>Transaction monitoring testing</li>
+                        <li>MID/TID assignment validation</li>
+                        <li>Issue tracking with Trello</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Functional Testing</span><span>Trello</span><span>Agent Banking</span>
+                    </div>
+                </div>
+
+                <!-- Bayar Bayar Plus -->
+                <div class="project-card animate-on-scroll" data-category="testing">
+                    <div class="card-accent"></div>
+                    <div class="card-header">
+                        <div class="card-icon"><i class="fas fa-receipt"></i></div>
+                        <span class="card-badge">QA</span>
+                    </div>
+                    <h3 class="card-title">Bayar Bayar Plus</h3>
+                    <p class="card-org">PT. Arranet Indonesia Sejahtera — 2024–2025</p>
+                    <p class="card-description">Performed manual testing on mobile and EDC applications for bill payment and top-up features. Identified and documented bugs, and conducted retesting to verify fixes.</p>
+                    <ul class="card-highlights">
+                        <li>Mobile & EDC bill payment testing</li>
+                        <li>Bug documentation & retesting</li>
+                        <li>Feature verification</li>
+                    </ul>
+                    <div class="card-tags">
+                        <span>Manual Testing</span><span>Mobile</span><span>EDC</span><span>Payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-tools"></i> Skills</span>
+                <h2 class="section-title">My Toolkit</h2>
+                <p class="section-subtitle">A blend of business acumen, technical proficiency, and people skills</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Professional Skills -->
+                <div class="skills-category animate-on-scroll">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Professional Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Business Requirements Analysis</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Business Process Analysis</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Business Process Modeling (BPMN)</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Requirements Gathering</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>BRD Documentation</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>System Analysis & Modeling</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Software Testing (Manual & Automated)</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Test Case Design & Execution</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>User Acceptance Testing (UAT)</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Bug Reporting & Defect Tracking</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Data Analysis & Reporting</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>UI/UX Prototyping</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Public Speaking & Presentation</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Stakeholder Management</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Project Coordination</span></div>
+                        <div class="skill-item"><i class="fas fa-check-circle"></i><span>Customer Relationship Management</span></div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skills-category animate-on-scroll">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Tools & Technologies</h3>
+                    </div>
+                    <div class="tools-grid">
+                        <div class="tool-item" title="SAP"><i class="fas fa-database"></i><span>SAP</span></div>
+                        <div class="tool-item" title="Odoo"><i class="fas fa-cubes"></i><span>Odoo</span></div>
+                        <div class="tool-item" title="Figma"><i class="fab fa-figma"></i><span>Figma</span></div>
+                        <div class="tool-item" title="Visual Paradigm"><i class="fas fa-project-diagram"></i><span>Visual Paradigm</span></div>
+                        <div class="tool-item" title="Bizagi"><i class="fas fa-diagram-project"></i><span>Bizagi</span></div>
+                        <div class="tool-item" title="Python"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="tool-item" title="Laravel"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+                        <div class="tool-item" title="MySQL"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="tool-item" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></div>
+                        <div class="tool-item" title="VS Code"><i class="fas fa-code"></i><span>VS Code</span></div>
+                        <div class="tool-item" title="Selenium"><i class="fas fa-robot"></i><span>Selenium</span></div>
+                        <div class="tool-item" title="JMeter"><i class="fas fa-tachometer-alt"></i><span>JMeter</span></div>
+                        <div class="tool-item" title="Looker Studio"><i class="fas fa-chart-bar"></i><span>Looker Studio</span></div>
+                        <div class="tool-item" title="Pentaho"><i class="fas fa-exchange-alt"></i><span>Pentaho DI</span></div>
+                        <div class="tool-item" title="SmartPLS"><i class="fas fa-chart-pie"></i><span>SmartPLS 4</span></div>
+                        <div class="tool-item" title="RStudio"><i class="fas fa-calculator"></i><span>RStudio</span></div>
+                        <div class="tool-item" title="Microsoft Office"><i class="fas fa-file-word"></i><span>MS Office</span></div>
+                        <div class="tool-item" title="Cisco Packet Tracer"><i class="fas fa-network-wired"></i><span>Cisco PT</span></div>
+                        <div class="tool-item" title="VMware"><i class="fas fa-server"></i><span>VMware</span></div>
+                        <div class="tool-item" title="Oracle VirtualBox"><i class="fas fa-desktop"></i><span>VirtualBox</span></div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-category animate-on-scroll">
+                    <div class="skills-category-header">
+                        <div class="skills-category-icon"><i class="fas fa-brain"></i></div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+                            <span>Analytical Thinking</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-chess-knight"></i></div>
+                            <span>Strategic Thinking</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+                            <span>Communication</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-search"></i></div>
+                            <span>Attention to Detail</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-crown"></i></div>
+                            <span>Leadership</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-people-group"></i></div>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-arrows-spin"></i></div>
+                            <span>Adaptability</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-scale-balanced"></i></div>
+                            <span>Critical Decision Making</span>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon"><i class="fas fa-clock"></i></div>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-certificate"></i> Certifications</span>
+                <h2 class="section-title">Credentials & Training</h2>
+                <p class="section-subtitle">Professional certifications and specialized training programs</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>System Analyst</h3>
+                    <p class="cert-issuer">BNSP Certification</p>
+                    <div class="cert-badge">Certified</div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>SAP Certification</h3>
+                    <p class="cert-issuer">SAP</p>
+                    <div class="cert-badge">Certified</div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>EPRT Certification</h3>
+                    <p class="cert-issuer">Enterprise Resource Planning</p>
+                    <div class="cert-badge">Certified</div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Enterprise Infrastructure Management</h3>
+                    <p class="cert-issuer">Cloud Computing Bootcamp</p>
+                    <div class="cert-badge">Completed</div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-heart"></i></div>
+                    <h3>ESQ Leadership Centre</h3>
+                    <p class="cert-issuer">Leadership Certification</p>
+                    <div class="cert-badge">Certified</div>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Fiber Optic Training</h3>
+                    <p class="cert-issuer">Networking Infrastructure</p>
+                    <div class="cert-badge">Completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic Background</h2>
+                <p class="section-subtitle">Where my foundation in business and technology was built</p>
+            </div>
+            <div class="education-card animate-on-scroll">
+                <div class="edu-icon"><i class="fas fa-university"></i></div>
+                <div class="edu-content">
+                    <h3>Bachelor of Information Systems</h3>
+                    <p class="edu-school">Telkom University — Bandung, Indonesia</p>
+                    <div class="edu-gpa">
+                        <span class="gpa-label">GPA</span>
+                        <span class="gpa-value">3.64 / 4.00</span>
+                    </div>
+                    <p class="edu-focus">Specialization: Enterprise Resource Planning (ERP)</p>
+                </div>
+            </div>
+            <div class="org-section animate-on-scroll">
+                <h3 class="org-title">Organizational Experience</h3>
+                <div class="org-grid">
+                    <div class="org-card">
+                        <div class="org-icon"><i class="fas fa-futbol"></i></div>
+                        <h4>UKM Bola Telkom</h4>
+                        <p class="org-role">Internal Staff</p>
+                        <p class="org-place">Telkom University</p>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-icon"><i class="fas fa-running"></i></div>
+                        <h4>Information Systems Sports Association</h4>
+                        <p class="org-role">Event Coordinator</p>
+                        <p class="org-place">Telkom University</p>
+                    </div>
+                    <div class="org-card">
+                        <div class="org-icon"><i class="fas fa-trophy"></i></div>
+                        <h4>Information Systems Sports Association</h4>
+                        <p class="org-role">Coaching Coordinator</p>
+                        <p class="org-place">Telkom University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">I'm always open to new opportunities and interesting conversations. Feel free to reach out!</p>
+            </div>
+            <div class="contact-grid animate-on-scroll">
+                <a href="mailto:hafizhrizki@example.com" class="contact-card" id="contact-email">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>Drop me a line</p>
+                </a>
+                <a href="https://linkedin.com/in/hafizhrizkioktavian" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>Let's connect professionally</p>
+                </a>
+                <a href="https://github.com/hafizhrizkioktavian" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>Check out my repositories</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">{</span>
+                    <span class="logo-text">HRO</span>
+                    <span class="logo-bracket">}</span>
+                </div>
+                <p class="footer-text">Designed with passion. Built with purpose.</p>
+                <p class="footer-copyright">&copy; 2025 Hafizh Rizki Oktavian. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
