@@ -217,10 +217,8 @@ function initNavigation() {
 function initTypingEffect() {
     const roles = [
         'Business Analyst',
-        'ERP Specialist',
         'System Analyst',
-        'Quality Assurance Tester',
-        'Process Optimizer'
+        'Quality Assurance'
     ];
 
     const element = document.getElementById('typedRole');
