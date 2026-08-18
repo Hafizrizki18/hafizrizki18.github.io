@@ -218,7 +218,8 @@ function initTypingEffect() {
     const roles = [
         'Business Analyst',
         'System Analyst',
-        'Quality Assurance'
+        'Quality Assurance',
+        'Infrastructure Technology'
     ];
 
     const element = document.getElementById('typedRole');
