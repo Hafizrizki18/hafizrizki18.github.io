@@ -653,6 +653,12 @@ img {
     animation: float 6s ease-in-out infinite 2s;
 }
 
+.card-4 {
+    top: 30%;
+    left: -10%;
+    animation: float 6s ease-in-out infinite 3s;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-12px); }
