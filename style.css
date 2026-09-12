@@ -1373,6 +1373,33 @@ img {
     border: 1px solid var(--border-accent);
 }
 
+.cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    background: rgba(201, 168, 76, 0.06);
+    border: 1px solid rgba(201, 168, 76, 0.15);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.cert-link:hover {
+    background: rgba(201, 168, 76, 0.15);
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(201, 168, 76, 0.2);
+}
+
+.cert-link i {
+    font-size: 0.85rem;
+}
+
 /* =========================================
    EDUCATION SECTION
    ========================================= */
